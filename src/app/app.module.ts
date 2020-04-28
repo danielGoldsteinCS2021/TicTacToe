@@ -3,14 +3,26 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {NbThemeModule, NbLayoutModule, NbButtonModule} from '@nebular/theme';
+import { NbEvaIconsModule } from '@nebular/eva-icons';
+import { TicTacBoardComponent } from './tic-tac-board/tic-tac-board.component';
+import { TicTacToeBoxComponent } from './tic-tac-toe-box/tic-tac-toe-box.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TicTacBoardComponent,
+    TicTacToeBoxComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    NbThemeModule.forRoot({name: 'cosmic'}),
+    NbLayoutModule,
+    NbEvaIconsModule,
+    NbButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

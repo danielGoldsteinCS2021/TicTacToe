@@ -1,0 +1,20 @@
+main{
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-gap: 0;
+}
+
+#startButton{
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+app-tic-tac-toe-box{
+  border: 2px rebeccapurple solid;
+  height: 200px;
+}
+
+h1{
+  margin: 3px;
+  font-family: 'Roboto', sans-serif;
+}

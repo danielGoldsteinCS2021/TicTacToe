@@ -1,0 +1,3 @@
+<button nbButton outline status="danger" *ngIf="!valueOfBox">{{ valueOfBox }}</button> <!-- auto fills each button -->
+<button nbButton hero status="info" size="giant" *ngIf="valueOfBox == 'X'">{{ valueOfBox }}</button>
+<button nbButton hero status="success" size="giant" *ngIf="valueOfBox == 'O'"> {{ valueOfBox }}</button>

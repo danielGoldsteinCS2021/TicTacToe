@@ -1,0 +1,15 @@
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet"> <!--Fonts-->
+
+<h1 *ngIf="!winner">Player: {{ player }} it is your turn </h1>
+<h1 *ngIf="winner"> Player: {{ winner }} won the game! </h1>
+<button id="startButton" nbButton outline status="success" (click)="createGame()">
+  Play New Game
+</button>
+
+<main>
+  <app-tic-tac-toe-box
+    *ngFor="let val of boxes; let i = index"
+    [valueOfBox] = "val"
+    (click)="markBox(i)">
+  </app-tic-tac-toe-box>
+</main>
